@@ -217,14 +217,14 @@ public class FarmerListFragment extends Fragment {
                 int index=0;
                 for (String filter : data
                 ) {
-                    if (s.length()<=filter.length()) {
+                    if (s.length() <= filter.length()) {
 
                         if (s.equalsIgnoreCase(filter.substring(0, s.length()))) {
                             farmerModels.add(farmers.get(index));
                             filterData.add(filter);
                         }
-                        index++;
                     }
+                    index++;
                     Log.i("search", "filter: " + filterData);
                 }
 
