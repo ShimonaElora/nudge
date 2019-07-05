@@ -2,12 +2,9 @@ package com.example.nudge.activities;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.HapticFeedbackConstants;
 import android.view.View;
 import android.widget.Button;
@@ -56,7 +53,7 @@ public class NewVisitActivity extends AppCompatActivity {
         sharedPrefUtils = new SharedPrefUtils(this);
 
         crossBtn = findViewById(R.id.cross_btn);
-        visitTitle = findViewById(R.id.visit_title);
+        visitTitle = findViewById(R.id.country_title);
         contactSearchBtn = findViewById(R.id.contact_search_btn);
         saveBtn = findViewById(R.id.save_btn);
         dateBtn = findViewById(R.id.date_btn);

@@ -2,7 +2,6 @@ package com.example.nudge.adapters;
 
 import android.content.Context;
 import android.content.Intent;
-import android.gesture.GestureLibraries;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
@@ -173,8 +172,8 @@ public class VisitsAdapter extends RecyclerView.Adapter<VisitsAdapter.myViewHold
             changeStatusBtn = itemView.findViewById(R.id.change_status_btn);
             callBtn = itemView.findViewById(R.id.call_btn);
             farmerImage = itemView.findViewById(R.id.farmer_image);
-            visitTitle = itemView.findViewById(R.id.visit_title);
-            farmerName = itemView.findViewById(R.id.farmer_name);
+            visitTitle = itemView.findViewById(R.id.country_title);
+            farmerName = itemView.findViewById(R.id.profit_id);
             visitDate = itemView.findViewById(R.id.visit_date);
             visitCard = itemView.findViewById(R.id.visit_order_card);
             visitChildView = itemView.findViewById(R.id.visit_child_view);

@@ -77,7 +77,6 @@ public class RecyclerAdapter extends Adapter<RecyclerAdapter.ImageViewHolder> {
             super(itemView);
             crop=  (ImageView) itemView.findViewById(R.id.crop);
             croptitle=(TextView) itemView.findViewById(R.id.croptitle);
-            cropDesc = itemView.findViewById(R.id.crop_desc);
         }
     }
 

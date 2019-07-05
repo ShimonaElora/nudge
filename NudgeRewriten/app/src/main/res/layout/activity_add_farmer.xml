@@ -99,7 +99,7 @@
         app:srcCompat="@drawable/ic_home_tab_icon_color_24dp" />
 
     <EditText
-        android:id="@+id/farmer_name"
+        android:id="@+id/profit_id"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -124,8 +124,8 @@
         android:hint="Contact Number 1"
         android:inputType="textPersonName|phone"
         app:layout_constraintBottom_toBottomOf="@+id/imageView12"
-        app:layout_constraintEnd_toEndOf="@+id/farmer_name"
-        app:layout_constraintStart_toStartOf="@+id/farmer_name"
+        app:layout_constraintEnd_toEndOf="@+id/profit_id"
+        app:layout_constraintStart_toStartOf="@+id/profit_id"
         app:layout_constraintTop_toTopOf="@+id/imageView12" />
 
     <EditText
@@ -197,8 +197,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="@+id/farmer_name"
+        app:layout_constraintEnd_toEndOf="@+id/profit_id"
         app:layout_constraintStart_toStartOf="@+id/imageView11"
-        app:layout_constraintTop_toTopOf="@+id/farmer_name" />
+        app:layout_constraintTop_toTopOf="@+id/profit_id" />
 
 </android.support.constraint.ConstraintLayout>

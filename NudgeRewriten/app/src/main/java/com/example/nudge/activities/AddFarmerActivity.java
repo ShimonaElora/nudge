@@ -1,11 +1,9 @@
 package com.example.nudge.activities;
 
 import android.Manifest;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -19,8 +17,6 @@ import android.provider.MediaStore;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -39,26 +35,20 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.nudge.R;
-import com.example.nudge.fragments.FarmerListFragment;
 import com.example.nudge.models.FarmerModel;
 import com.example.nudge.utils.SharedPrefUtils;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreSettings;
 import com.google.firebase.firestore.GeoPoint;
-import com.google.firebase.firestore.model.value.GeoPointValue;
 import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayOutputStream;
-import java.net.URI;
-import java.net.URL;
 
 
 public class AddFarmerActivity extends AppCompatActivity {
@@ -174,7 +164,7 @@ public class AddFarmerActivity extends AppCompatActivity {
         cameraBtn = findViewById(R.id.camera_btn);
         farmerImg = findViewById(R.id.farmer_img);
 
-        farmerName = findViewById(R.id.farmer_name);
+        farmerName = findViewById(R.id.profit_id);
         farmerAdd = findViewById(R.id.farmer_add);
         farmerNo1 = findViewById(R.id.farmer_no_1);
         farmerNo2 = findViewById(R.id.farmer_no_2);

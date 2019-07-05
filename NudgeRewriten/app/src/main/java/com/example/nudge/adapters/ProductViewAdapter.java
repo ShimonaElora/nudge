@@ -66,8 +66,7 @@ public class ProductViewAdapter extends RecyclerView.Adapter<ProductViewAdapter.
             @Override
             public void onClick(View v) {
                 viewStore.productId=Products.get(i).getProduct_id();
-                viewStore.showPopUps(v);
-            }
+                viewStore.showPopUps(v); }
         });
 
         if(currentPosition == i) {
@@ -108,11 +107,11 @@ public class ProductViewAdapter extends RecyclerView.Adapter<ProductViewAdapter.
             productAvailableText = itemView.findViewById(R.id.product_available_text);
             productAvailableIcon = itemView.findViewById(R.id.product_available_icon);
             viewstoreDropDownIcon = itemView.findViewById(R.id.viewstore_dropDownIcon);
-            itemimage=(ImageView) itemView.findViewById(R.id.viewstore_product_image);
-            Productname=(TextView) itemView.findViewById(R.id.viewstore_product_title);
-            Productcompany =(TextView) itemView.findViewById(R.id.viewstore_company_name);
-            Price=(TextView) itemView.findViewById(R.id.viewstore_product_price);
-            cardView = (CardView) itemView.findViewById(R.id.viewstore_order_card);
+            itemimage= itemView.findViewById(R.id.viewstore_product_image);
+            Productname= itemView.findViewById(R.id.viewstore_product_title);
+            Productcompany =itemView.findViewById(R.id.viewstore_company_name);
+            Price= itemView.findViewById(R.id.viewstore_product_price);
+            cardView = itemView.findViewById(R.id.viewstore_order_card);
             this.viewStore = viewStore;
             viewStoreChildView=itemView.findViewById(R.id.viewstore_child_view);
             viewstore_order_button=itemView.findViewById(R.id.viewstore_order_button);

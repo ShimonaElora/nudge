@@ -13,29 +13,46 @@
     <uses-feature android:name="android.hardware.camera" />
 
     <application
+        android:name=".activities.OrderPlaced"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Nudge"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:label"
-        android:name=".activities.OrderPlaced">
-        <activity android:name=".activities.SelectFarmerActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".activities.ViewStore" android:screenOrientation="portrait" />
-        <activity android:name=".activities.AddFarmerActivity" android:screenOrientation="portrait" />
-        <activity android:name=".activities.CropTimeline" android:screenOrientation="portrait"/>
-        <activity android:name=".activities.ScheduleCropActivity" android:screenOrientation="portrait" />
+        tools:replace="android:label">
+        <activity android:name=".activities.CropDetailActivity"></activity>
         <activity
-            android:screenOrientation="portrait"
+            android:name=".activities.SelectFarmerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ViewStore"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddFarmerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CropTimeline"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ScheduleCropActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".activities.FarmerProfileActivity"
-            android:theme="@style/FarmerStyle" />
-        <activity android:name=".activities.NewVisitActivity" android:screenOrientation="portrait" />
-        <activity android:name=".activities.OrdersActivity" android:screenOrientation="portrait" />
-        <activity android:name=".activities.VisitsActivity" android:screenOrientation="portrait" />
-        <activity
             android:screenOrientation="portrait"
+            android:theme="@style/FarmerStyle" />
+        <activity
+            android:name=".activities.NewVisitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.OrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.VisitsActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".activities.SplashScreenActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme1">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -45,12 +62,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:screenOrientation="portrait"
             android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:screenOrientation="portrait"
             android:name=".activities.MainActivity"
+            android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity android:name=".activities.SelectedCropActity" />
     </application>

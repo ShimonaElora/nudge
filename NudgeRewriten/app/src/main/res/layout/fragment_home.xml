@@ -173,7 +173,7 @@
                     android:id="@+id/order_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_regular"
+                    android:fontFamily="@font/"
                     android:text="Orders"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"

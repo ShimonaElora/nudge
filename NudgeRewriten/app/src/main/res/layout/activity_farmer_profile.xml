@@ -36,8 +36,7 @@
                     android:layout_height="300dp"
                     android:fitsSystemWindows="true"
                     android:scaleType="fitXY"
-                    app:layout_collapseMode="parallax"
-                    app:srcCompat="@drawable/farmprof" />
+                    app:layout_collapseMode="parallax" />
 
                 <TextView
                     android:id="@+id/farmer_place"
@@ -55,7 +54,7 @@
                     android:id="@+id/toolbar_farmer_add"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    android:layout_alignLeft="@+id/farmer_name"
+                    android:layout_alignLeft="@+id/profit_id"
                     android:layout_alignTop="@+id/restaurant_image"
                     android:layout_alignParentStart="true"
                     android:layout_marginTop="16dp"

@@ -42,7 +42,7 @@
     </android.support.v7.widget.Toolbar>
 
     <Button
-        android:id="@+id/order_btn"
+        android:id="@+id/info_id"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -68,7 +68,7 @@
         android:textAllCaps="false"
         android:textColor="@drawable/text_color"
         app:layout_constraintEnd_toStartOf="@+id/delivered_btn"
-        app:layout_constraintStart_toEndOf="@+id/order_btn"
+        app:layout_constraintStart_toEndOf="@+id/info_id"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_farmer_add" />
 
     <Button

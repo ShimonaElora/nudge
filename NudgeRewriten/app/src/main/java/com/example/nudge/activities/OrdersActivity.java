@@ -27,21 +27,13 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 
-import java.lang.reflect.Type;
-import java.text.DateFormat;
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 
 public class OrdersActivity extends AppCompatActivity {
@@ -76,7 +68,7 @@ public class OrdersActivity extends AppCompatActivity {
 
         ifOrderEmpty = findViewById(R.id.if_order_empty);
 
-        orderBtn = findViewById(R.id.order_btn);
+        orderBtn = findViewById(R.id.info_id);
         orderProgressBar = findViewById(R.id.order_progress_bar);
         receivedBtn = findViewById(R.id.received_btn);
         deliveredBtn = findViewById(R.id.delivered_btn);
@@ -213,6 +205,7 @@ public class OrdersActivity extends AppCompatActivity {
                             Collections.sort(orderedList,Collections.<OrderModel>reverseOrder());
                             Collections.sort(receivedList,Collections.<OrderModel>reverseOrder());
                             Collections.sort(deliveredList,Collections.<OrderModel>reverseOrder());
+
                             orderRcv.setVisibility(View.VISIBLE);
 
                             orderProgressBar.animate()

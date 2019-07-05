@@ -16,10 +16,6 @@ import com.bumptech.glide.Glide;
 import com.example.nudge.R;
 import com.example.nudge.activities.OrdersActivity;
 import com.example.nudge.models.OrderModel;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
@@ -158,11 +154,11 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.myViewHold
             productImage = itemView.findViewById(R.id.product_image);
             datesvg= itemView.findViewById(R.id.date_svg);
             checksvg = itemView.findViewById(R.id.check_svg);
-            visitTitle = itemView.findViewById(R.id.visit_title);
-            farmerName = itemView.findViewById(R.id.farmer_name);
-            type = itemView.findViewById(R.id.type);
+            visitTitle = itemView.findViewById(R.id.country_title);
+            farmerName = itemView.findViewById(R.id.profit_id);
+            type = itemView.findViewById(R.id.price_id);
             orderDate = itemView.findViewById(R.id.visit_date);
-            orderBtn = itemView.findViewById(R.id.order_btn);
+            orderBtn = itemView.findViewById(R.id.info_id);
             childView = itemView.findViewById(R.id.visit_child_view);
             orderCard = itemView.findViewById(R.id.visit_order_card);
         }

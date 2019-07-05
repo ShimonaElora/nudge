@@ -36,10 +36,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.014"
-                app:srcCompat="@drawable/fertilizer" />
+                />
 
             <TextView
-                android:id="@+id/visit_title"
+                android:id="@+id/country_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -52,18 +52,18 @@
                 app:layout_constraintTop_toTopOf="@+id/product_image" />
 
             <TextView
-                android:id="@+id/type"
+                android:id="@+id/price_id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/roboto_regular"
                 android:text="Delivered to:"
                 android:textSize="15sp"
-                app:layout_constraintStart_toStartOf="@+id/visit_title"
-                app:layout_constraintTop_toBottomOf="@+id/visit_title" />
+                app:layout_constraintStart_toStartOf="@+id/country_title"
+                app:layout_constraintTop_toBottomOf="@+id/country_title" />
 
             <TextView
-                android:id="@+id/farmer_name"
+                android:id="@+id/profit_id"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -74,8 +74,8 @@
                 app:layout_constraintBottom_toTopOf="@id/visit_child_view"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/type"
-                app:layout_constraintTop_toTopOf="@+id/type"
+                app:layout_constraintStart_toEndOf="@+id/price_id"
+                app:layout_constraintTop_toTopOf="@+id/price_id"
                 app:layout_constraintVertical_bias="0.0" />
 
             <android.support.constraint.ConstraintLayout
@@ -139,7 +139,7 @@
                     app:layout_constraintVertical_bias="1.0" />
 
                 <TextView
-                    android:id="@+id/order_btn"
+                    android:id="@+id/info_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="36dp"

@@ -36,7 +36,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/visit_title"
+                android:id="@+id/country_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -48,14 +48,14 @@
                 app:layout_constraintTop_toTopOf="@+id/farmer_image" />
 
             <TextView
-                android:id="@+id/farmer_name"
+                android:id="@+id/profit_id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/roboto_regular"
                 android:textSize="16sp"
-                app:layout_constraintStart_toStartOf="@+id/visit_title"
-                app:layout_constraintTop_toBottomOf="@+id/visit_title" />
+                app:layout_constraintStart_toStartOf="@+id/country_title"
+                app:layout_constraintTop_toBottomOf="@+id/country_title" />
 
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/visit_child_view"
@@ -169,9 +169,9 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="8dp"
-                app:layout_constraintBottom_toBottomOf="@+id/farmer_name"
+                app:layout_constraintBottom_toBottomOf="@+id/profit_id"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/visit_title"
+                app:layout_constraintTop_toTopOf="@+id/country_title"
                 app:srcCompat="@drawable/ic_baseline_call" />
 
 

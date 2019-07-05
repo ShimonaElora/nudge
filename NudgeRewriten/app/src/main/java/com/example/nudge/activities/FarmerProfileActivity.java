@@ -188,10 +188,10 @@ public class FarmerProfileActivity extends AppCompatActivity {
                     for(DocumentSnapshot d: list) {
                         CropModel crop = d.toObject(CropModel.class);
                         crops.add(crop);
-                        Toast.makeText(context, "Crops Data updated", Toast.LENGTH_SHORT).show();
                         adapter.notifyDataSetChanged();
                     }
                 }
+                Toast.makeText(context, "Crops Data updated", Toast.LENGTH_SHORT).show();
                 farmerPb.setVisibility(View.INVISIBLE);
             }
         });
